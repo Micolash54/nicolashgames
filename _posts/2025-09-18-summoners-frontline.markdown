@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Summoners Frontline
+shop_id: sf
 date: 2025-09-18
 description: Master the art of unit synergy, timing, and resource management to build and upgrade your base, creating a dynamic force tailored to your playstyle.
 img: /sf/sf_banner.webp # Add image post
@@ -14,12 +15,12 @@ As you progress, careful planning and quick thinking are essential to overcoming
 
 <div class="carousel-wrap">
   <ul class="carousel">
-    <li><img src="{{site.baseurl}}/assets/img/sf/sf_shot1.webp" alt="Image 1"></li>
-    <li><img src="{{site.baseurl}}/assets/img/sf/sf_shot2.webp" alt="Image 2"></li>
-    <li><img src="{{site.baseurl}}/assets/img/sf/sf_shot3.webp" alt="Image 3"></li>
-    <li><img src="{{site.baseurl}}/assets/img/sf/sf_shot4.webp" alt="Image 4"></li>
-    <li><img src="{{site.baseurl}}/assets/img/sf/sf_shot5.webp" alt="Image 5"></li>
-    <li><img src="{{site.baseurl}}/assets/img/sf/sf_shot6.webp" alt="Image 6"></li>
+    <li><img src="{{site.baseurl}}/assets/img/sf/sf_shot1.webp" alt="Summoners Frontline gameplay screenshot 1"></li>
+    <li><img src="{{site.baseurl}}/assets/img/sf/sf_shot2.webp" alt="Summoners Frontline gameplay screenshot 2"></li>
+    <li><img src="{{site.baseurl}}/assets/img/sf/sf_shot3.webp" alt="Summoners Frontline gameplay screenshot 3"></li>
+    <li><img src="{{site.baseurl}}/assets/img/sf/sf_shot4.webp" alt="Summoners Frontline gameplay screenshot 4"></li>
+    <li><img src="{{site.baseurl}}/assets/img/sf/sf_shot5.webp" alt="Summoners Frontline gameplay screenshot 5"></li>
+    <li><img src="{{site.baseurl}}/assets/img/sf/sf_shot6.webp" alt="Summoners Frontline gameplay screenshot 6"></li>
   </ul>
 
   <div class="carousel-ui">
@@ -48,5 +49,5 @@ Efficient resource management is crucial, as it directly impacts a player's abil
 <br>
 
 <div class="embed-responsive">
-<iframe frameborder="0" src="https://itch.io/embed/2884518?border_width=2" width="554" height="169"><a href="https://micolash54.itch.io/summoners-frontline">Summoners Frontline by Micolash</a></iframe>
+<iframe title="Summoners Frontline store listing" frameborder="0" src="https://itch.io/embed/2884518?border_width=2" width="554" height="169"><a href="https://micolash54.itch.io/summoners-frontline">Summoners Frontline by Micolash</a></iframe>
 </div>

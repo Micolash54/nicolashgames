@@ -1,28 +1,30 @@
 ---
 layout: main
-title: Tags
+title: Projects
 permalink: /tags/
+description: Browse games and earlier work by Nicolash Games.
 ---
-{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
-{% assign tag_words = site_tags | split:',' | sort %}
-
-<section class="blog-tags">
-  <h1>Project Tags</h1>
-  <ul class="tags">
-<!--  cycles through tag list and creates header row of all tags used in site with accompanying per-tag counts...-->
-  {% for this_word in tag_words %}
-    <li ><a href="#{{ this_word | cgi_escape }}" class="tag">{{ this_word }} <span>({{ site.tags[this_word].size }})</span></a></li>
-  {% endfor %}
-  </ul>
-<!--cycles through tag list and creates subheader for each tag name...-->
-  {% for this_word in tag_words %}
-  <h2 id="{{ this_word | cgi_escape }}">{{ this_word }}</h2>
-<!--  lists all posts corresponding to specific tag...-->
-    {% for post in site.tags[this_word] %}{% if post.title != null %}
-    <div class="tag-list">
-        <span><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></span>
-        <!-- <small><span>| {{ post.date | date_to_string }}</span></small> -->
-    </div>
-    {% endif %}{% endfor %}
-  {% endfor %}
+<section class="paper-card content-card">
+  <a class="back-link" href="{{ '/' | relative_url }}">← Back to the shop</a>
+  <div class="eyebrow">Aisle 01 · Complete catalogue</div>
+  <h1>Projects on the shelf</h1>
+  <p class="content-lead">Games, experiments, and earlier work. Pick a project to read its full story.</p>
+  <div class="catalog-grid">
+    {% assign projects = site.posts | sort: 'date' | reverse %}
+    {% for post in projects %}
+    <a class="catalog-card" href="{{ post.url | relative_url }}">
+      <img src="{{ post.img | prepend: '/assets/img' | relative_url }}" alt="" loading="lazy">
+      <div><span class="meta">{% if post.shop_id == 'ar' %}Archive pack{% else %}Game pack{% endif %}</span><h2>{{ post.title }}</h2><p>{{ post.description | truncatewords: 19 }}</p></div>
+    </a>
+    {% endfor %}
+  </div>
+  <div class="tag-index">
+    <hr class="section-rule"><h2>Browse by tag</h2>
+    {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+    {% assign tag_words = site_tags | split:',' | sort %}
+    {% for word in tag_words %}<a class="tag" href="#tag-{{ word | slugify }}">{{ word }} ({{ site.tags[word].size }})</a>{% endfor %}
+    {% for word in tag_words %}
+    <section class="tag-group" id="tag-{{ word | slugify }}"><h3>{{ word }}</h3>{% for post in site.tags[word] %}<a href="{{ post.url | relative_url }}">{{ post.title }} →</a>{% endfor %}</section>
+    {% endfor %}
+  </div>
 </section>

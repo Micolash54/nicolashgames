@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Tap Conquest
+shop_id: tc
 date: 2025-09-17
 description: Conquer towers with precision as you craft powerful decks, customize your loadouts, and unleash strategies uniquely tailored to your playstyle.
 img: /tc/tc_banner.webp # Add image post
@@ -14,11 +15,11 @@ By integrating a comprehensive loadout and card mechanic, the game offers player
 
 <div class="carousel-wrap">
   <ul class="carousel">
-    <li><img src="{{site.baseurl}}/assets/img/tc/tc_shot1.webp" alt="Image 1"></li>
-    <li><img src="{{site.baseurl}}/assets/img/tc/tc_shot2.webp" alt="Image 2"></li>
-    <li><img src="{{site.baseurl}}/assets/img/tc/tc_shot3.webp" alt="Image 3"></li>
-    <li><img src="{{site.baseurl}}/assets/img/tc/tc_shot4.webp" alt="Image 4"></li>
-    <li><img src="{{site.baseurl}}/assets/img/tc/tc_shot5.webp" alt="Image 5"></li>
+    <li><img src="{{site.baseurl}}/assets/img/tc/tc_shot1.webp" alt="Tap Conquest gameplay screenshot 1"></li>
+    <li><img src="{{site.baseurl}}/assets/img/tc/tc_shot2.webp" alt="Tap Conquest gameplay screenshot 2"></li>
+    <li><img src="{{site.baseurl}}/assets/img/tc/tc_shot3.webp" alt="Tap Conquest gameplay screenshot 3"></li>
+    <li><img src="{{site.baseurl}}/assets/img/tc/tc_shot4.webp" alt="Tap Conquest gameplay screenshot 4"></li>
+    <li><img src="{{site.baseurl}}/assets/img/tc/tc_shot5.webp" alt="Tap Conquest gameplay screenshot 5"></li>
   </ul>
 
   <div class="carousel-ui">
@@ -46,5 +47,5 @@ The Loadout system offers players the freedom to customize their gameplay experi
 <br>
 
 <div class="embed-responsive">
-<iframe frameborder="0" src="https://itch.io/embed/2825587?border_width=2" width="554" height="169"><a href="https://micolash54.itch.io/tap-conquest">Tap Conquest by Micolash</a></iframe>
+<iframe title="Tap Conquest store listing" frameborder="0" src="https://itch.io/embed/2825587?border_width=2" width="554" height="169"><a href="https://micolash54.itch.io/tap-conquest">Tap Conquest by Micolash</a></iframe>
 </div>

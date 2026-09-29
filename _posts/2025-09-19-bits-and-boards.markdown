@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Bits and Boards
+shop_id: bb
 date: 2025-09-19
 description: Bits and Boards puts you behind the counter of a bustling neighbourhood game store, managing everything that happens on, under and after that counter. 
 img: /bb/bb_banner.webp # Add image post
@@ -14,12 +15,12 @@ You will be in charge of everything that happens on, under, and after that count
 
 <div class="carousel-wrap">
   <ul class="carousel">
-    <li><img src="{{site.baseurl}}/assets/img/bb/bb_shot1.webp" alt="Image 1"></li>
-    <li><img src="{{site.baseurl}}/assets/img/bb/bb_shot2.webp" alt="Image 2"></li>
-    <li><img src="{{site.baseurl}}/assets/img/bb/bb_shot3.webp" alt="Image 3"></li>
-    <li><img src="{{site.baseurl}}/assets/img/bb/bb_shot4.webp" alt="Image 4"></li>
-    <li><img src="{{site.baseurl}}/assets/img/bb/bb_shot5.webp" alt="Image 5"></li>
-    <li><img src="{{site.baseurl}}/assets/img/bb/bb_shot6.webp" alt="Image 6"></li>
+    <li><img src="{{site.baseurl}}/assets/img/bb/bb_shot1.webp" alt="Bits and Boards gameplay screenshot 1"></li>
+    <li><img src="{{site.baseurl}}/assets/img/bb/bb_shot2.webp" alt="Bits and Boards gameplay screenshot 2"></li>
+    <li><img src="{{site.baseurl}}/assets/img/bb/bb_shot3.webp" alt="Bits and Boards gameplay screenshot 3"></li>
+    <li><img src="{{site.baseurl}}/assets/img/bb/bb_shot4.webp" alt="Bits and Boards gameplay screenshot 4"></li>
+    <li><img src="{{site.baseurl}}/assets/img/bb/bb_shot5.webp" alt="Bits and Boards gameplay screenshot 5"></li>
+    <li><img src="{{site.baseurl}}/assets/img/bb/bb_shot6.webp" alt="Bits and Boards gameplay screenshot 6"></li>
   </ul>
 
   <div class="carousel-ui">
@@ -59,5 +60,5 @@ As your store earns profits, it will level up and grant perk points. Spend these
 <br>
 
 <div class="steam-embed">
-  <iframe src="https://store.steampowered.com/widget/3484190/" loading="lazy" frameborder="0"></iframe>
+  <iframe title="Bits and Boards store listing" src="https://store.steampowered.com/widget/3484190/" loading="lazy" frameborder="0"></iframe>
 </div>
