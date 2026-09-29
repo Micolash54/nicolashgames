@@ -1,59 +1,29 @@
 ---
 layout: main
-title: About
+title: About Nico
 permalink: /about/
+description: Meet Niccolò Chiodo, an indie game developer working in Unity, C#, design, and art.
 ---
-
-<h2 class="about-title">Hi there, I’m Nico.</h2>
-
-<p>
-  I am a game developer with a strong foundation in Unity and C#, driven by a passion for strategy and management games.
-</p>
-
-<p>
-  While I strive to be proficient across various fields, I enjoy creating games that blend clarity, complexity, and player agency, 
-  and I'm motivated by crafting systems that grow, evolve, and reward thoughtful decision-making.
-</p>  
-
-<p>
-  My recent work includes Bits and Boards – Game Store Simulator, a full-scale title I’m developing solo in Unity, 
-  where I design and implement everything from AI-driven staff behaviours and dynamic customer systems to economy balancing, 
-  UI/UX, and performance optimization.
-</p>
-
-<h2 class="about-title">So what can I do?</h2>
-
-<p>
-  My strongest expertise lies in Unity and C#, where I build scalable gameplay systems, AI behaviours, 
-  UI frameworks, and full game loops from the ground up. Through my work on Bits and Boards, 
-</p>
-
-<p>
-  I’ve gained deep experience architecting interconnected systems: AI with autonomous decision-making, 
-  customer simulations driven by budgets and preferences, inventory and economy logic, data-driven progression, 
-  and a perk tree that unlocks new layers of player strategy.
-</p>
-
-<p>
-  Beyond programming, I’m able to independently design UI/UX, create 2D and 3D assets, iterate quickly, and manage 
-  the full development life cycle of a project. Whether working solo or collaborating with others, I am able to utilize
-  various tools to effectively communicate and collaborate with team members to turn complex ideas into systems that 
-  feel rewarding for players.
-</p>
-
-<a class="about-gallery" href="{{site.baseurl}}/tags/">
-<!-- 2 rows × 4 columns = 8 images -->
-  <div class="gallery-row">
-    <img class="about-img" src="{{site.baseurl}}/assets/img/about/unity_logo.png" alt="Unity Logo">
-    <img class="about-img" src="{{site.baseurl}}/assets/img/about/csharp_logo.png" alt="C# Logo">
-    <img class="about-img" src="{{site.baseurl}}/assets/img/about/github_logo.png" alt="GitHub Logo">
+<article class="paper-card content-card">
+  <a class="back-link" href="{{ '/' | relative_url }}#nico">← Back to the shop</a>
+  <div class="eyebrow">Shopkeeper edition · Developer figure</div>
+  <div class="about-profile">
+    <div class="figure-card">
+      {% include nico-figure.svg %}
+      <strong>NICO</strong><small>Indie game developer</small>
+    </div>
+    <div>
+      <h1>Hi there, I’m Nico.</h1>
+      <p class="content-lead">I build strategy and management games where clear systems give players meaningful choices.</p>
+      <p>I’m a game developer with a strong foundation in Unity and C#. I enjoy creating games that blend clarity, complexity, and player agency, and systems that grow and reward thoughtful decision making.</p>
+      <p>My recent work is <a href="{{ '/bits-and-boards/' | relative_url }}">Bits and Boards</a>, a game store simulator I’m developing solo. I design and implement its staff AI, customer simulation, economy, progression, UI, art, and performance work.</p>
+    </div>
   </div>
-  <div class="gallery-row">
-    <img class="about-img" src="{{site.baseurl}}/assets/img/about/blender_logo.png" alt="Blender Logo">
-    <img class="about-img" src="{{site.baseurl}}/assets/img/about/aseprite_logo.png" alt="Aseprite Logo">
-    <img class="about-img" src="{{site.baseurl}}/assets/img/about/ai_logo.png" alt="Illustrator Logo">
-  </div>
-</a>
-</div>
-
-
+  <hr class="section-rule">
+  <h2>What’s in the box</h2>
+  <p>Gameplay systems, AI behaviours, UI frameworks, full game loops, 2D and 3D assets, and the ability to carry a project from early idea through release. I work independently and collaborate across disciplines.</p>
+  <div class="skill-shelf" aria-label="Tools and skills"><span>Unity</span><span>C#</span><span>GitHub</span><span>Blender</span><span>Aseprite</span><span>Illustrator</span><span>UI/UX</span></div>
+  <hr class="section-rule">
+  <h2>Get in touch</h2>
+  <p>Want to talk about games or a project? <a href="mailto:{{ site.social-email }}">Email me</a>, find me on <a href="https://github.com/{{ site.social-github }}" target="_blank" rel="noopener noreferrer">GitHub</a>, or follow my work on <a href="https://x.com/{{ site.social-x }}" target="_blank" rel="noopener noreferrer">X</a>.</p>
+</article>

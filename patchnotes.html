@@ -15,7 +15,9 @@ description: Update history and patch notes for Bits and Boards - Game Store Sim
   raw data folder served at /patchnotes/ (index.txt, vX.Y.Z.md).
 -->
 
-<section class="patchnotes">
+<section class="patchnotes paper-card content-card">
+  <a class="back-link" href="{{ '/' | relative_url }}#bb">← Back to the shop</a>
+  <div class="eyebrow">The ledger · Bits and Boards</div>
   <h1 class="patchnotes-title">Patch Notes</h1>
   <p class="patchnotes-intro">
     Update history for <strong>Bits and Boards &ndash; Game Store Simulator</strong>.
@@ -55,7 +57,16 @@ description: Update history and patch notes for Bits and Boards - Game Store Sim
   function renderMarkdown(md) {
     if (window.marked) {
       // marked >= 4 exposes marked.parse
-      return (typeof marked.parse === 'function') ? marked.parse(md) : marked(md);
+      var html = (typeof marked.parse === 'function') ? marked.parse(md) : marked(md);
+      var wrapper = document.createElement('div');
+      wrapper.innerHTML = html;
+      wrapper.querySelectorAll('h1,h2,h3,h4,h5').forEach(function (heading) {
+        var level = Math.min(6, Number(heading.tagName.slice(1)) + 1);
+        var shifted = document.createElement('h' + level);
+        shifted.innerHTML = heading.innerHTML;
+        heading.replaceWith(shifted);
+      });
+      return wrapper.innerHTML;
     }
     // Fallback: escape and show as preformatted text.
     var d = document.createElement('div');
@@ -116,65 +127,3 @@ description: Update history and patch notes for Bits and Boards - Game Store Sim
     });
 })();
 </script>
-
-<style>
-  .patchnotes { max-width: 46rem; }
-  .patchnotes-title { margin-bottom: .25rem; }
-  .patchnotes-intro { color: #7a7a7a; margin-top: 0; margin-bottom: 1.75rem; }
-
-  .patchnote {
-    border: 1px solid #e6e8ec;
-    border-radius: .4rem;
-    margin-bottom: .75rem;
-    background: #ffffff;
-    overflow: hidden;
-  }
-  .patchnote > summary {
-    cursor: pointer;
-    list-style: none;
-    padding: .85rem 1.1rem;
-    font-family: 'PT Serif', serif;
-    font-weight: 700;
-    font-size: 1.15rem;
-    color: #263959;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: background 150ms ease;
-  }
-  .patchnote > summary:hover { background: #f5f7fa; }
-  .patchnote > summary::-webkit-details-marker { display: none; }
-  .patchnote > summary::after {
-    content: '\002B';            /* + */
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    color: #a0a0a0;
-    margin-left: 1rem;
-    transition: transform 150ms ease;
-  }
-  .patchnote[open] > summary { border-bottom: 1px solid #eef0f3; }
-  .patchnote[open] > summary::after { content: '\2212'; } /* − */
-
-  .patchnote-body { padding: .35rem 1.1rem 1rem; color: #515151; }
-  .patchnote-body h1,
-  .patchnote-body h2,
-  .patchnote-body h3 {
-    font-family: 'PT Serif', serif;
-    color: #263959;
-    margin: 1rem 0 .4rem;
-    font-size: 1.05rem;
-  }
-  .patchnote-body ul { padding-left: 1.25rem; margin: .4rem 0; }
-  .patchnote-body li { margin: .2rem 0; }
-  .patchnote-body a { color: #263959; text-decoration: underline; }
-  .patchnote-body em { color: #7a7a7a; }
-  .patchnote-body code {
-    background: #f2f4f6;
-    padding: .1rem .35rem;
-    border-radius: .25rem;
-    font-size: .9em;
-  }
-
-  .patchnotes-status { color: #a0a0a0; font-style: italic; }
-  .patchnotes-error { color: #b23b3b; }
-</style>

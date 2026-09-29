@@ -1,33 +1,15 @@
 ---
 layout: main
 ---
-<article class="article-page">
-  <div class="page-content">
-    {% if page.img %}
-    <div class="page-cover-image">
-      <figure>
-        <img class="page-image" src="{{ page.img | prepend: '/assets/img' | relative_url }}" alt="{{page.title}}">
-        {% if page.fig-caption %}
-          <figcaption>{{page.fig-caption}}</figcaption>
-        {% endif %}
-      </figure>
-    </div> <!-- End Page Cover Image -->
-    {% else %}
-    {% endif %}
-    <div class="wrap-content">
-      <header class="header-page">
-        <h1 class="page-title">{{page.title}}</h1>
-        <div class="page-tag">
-          {% for tag in page.tags %}
-            <!-- <a href="{{site.baseurl}}/tags#{{tag}}" class="tag">&#35; {{ tag }}</a> -->
-            <span class="tag tag-{{ tag | slugify }}">&#35; {{ tag }}</span>
-          {% endfor %}
-        </div>
-        <!-- <div class="page-date"><span>{{page.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;&nbsp;</span></div>-->
-      </header>
-      {{content | markdownify}}
-      <div class="page-footer">
-      </div>
-    </div> <!-- End Wrap Content -->
-  </div> <!-- End Page Content -->
-</article> <!-- End Article Page -->
+<article class="project-page paper-card">
+  <a class="back-link" href="{{ '/' | relative_url }}#{{ page.shop_id | default: '' }}">← Back to the shop</a>
+  <header class="project-header">
+    <div class="eyebrow">Nicolash Games · Project file</div>
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p class="project-lead">{{ page.description }}</p>{% endif %}
+    {% if page.tags.size > 0 %}<div class="tag-list" aria-label="Project tags">{% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}</div>{% endif %}
+  </header>
+  {% if page.img %}<figure class="project-cover"><img src="{{ page.img | prepend: '/assets/img' | relative_url }}" alt="{{ page.title }} cover art" fetchpriority="high">{% if page.fig-caption %}<figcaption>{{ page.fig-caption }}</figcaption>{% endif %}</figure>{% endif %}
+  <div class="prose">{{ content }}</div>
+  <div class="project-end"><a href="{{ '/' | relative_url }}#{{ page.shop_id | default: '' }}">← Return to shelf</a><a href="{{ '/tags/' | relative_url }}">Browse all projects →</a></div>
+</article>

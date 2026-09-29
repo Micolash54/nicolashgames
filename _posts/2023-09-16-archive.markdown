@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Archive
+shop_id: ar
 date: 2023-09-16
 description: Archive of some old unreleased projects developed during my university study or internships.
 img: /archive/binders-4-3.webp # Add image post

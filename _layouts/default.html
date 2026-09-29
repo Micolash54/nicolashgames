@@ -1,38 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 {% include head.html %}
-<body>
-
-  <div class="wrapper">
-    {{ content }}
-  </div>
-  
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const wrap = document.querySelector('.carousel-wrap');
-      if (!wrap) return;
-  
-      const scroller = wrap.querySelector('.carousel');
-      const prev = wrap.querySelector('.carousel-ui .prev');
-      const next = wrap.querySelector('.carousel-ui .next');
-      const dots = Array.from(wrap.querySelectorAll('.carousel-ui .dots button'));
-      if (!scroller || !prev || !next || !dots.length) return;
-  
-      const slideW = () => scroller.clientWidth;
-      const idx = () => Math.round(scroller.scrollLeft / slideW());
-      const go = (i) => {
-        const clamped = Math.max(0, Math.min(i, dots.length - 1));
-        scroller.scrollTo({ left: clamped * slideW(), behavior: 'smooth' });
-        update(clamped);
-      };
-      const update = (i = idx()) => dots.forEach((b, j) => b.toggleAttribute('aria-current', j === i));
-  
-      prev.addEventListener('click', () => go(idx() - 1));
-      next.addEventListener('click', () => go(idx() + 1));
-      dots.forEach((b, i) => b.addEventListener('click', () => go(i)));
-      scroller.addEventListener('scroll', () => requestAnimationFrame(() => update()));
-      update(0);
-    });
-  </script>
+<body class="{% if page.layout == 'shop' %}shop-page{% else %}content-page{% endif %}">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="Nicolash Games home"><span aria-hidden="true">[</span> NICOLASH GAMES <span aria-hidden="true">]</span></a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="{{ '/' | relative_url }}">Shop</a>
+      <a href="{{ '/tags/' | relative_url }}">Projects</a>
+      <a href="{{ '/about/' | relative_url }}">About</a>
+      <a href="{{ '/patchnotes/page/' | relative_url }}">Patch notes</a>
+    </nav>
+  </header>
+  <main id="main-content">{{ content }}</main>
+  {% unless page.layout == 'shop' %}
+  <footer class="site-footer">
+    <span>© {{ site.time | date: '%Y' }} Nicolash Games</span>
+    <span><a href="mailto:{{ site.social-email }}">Email</a> · <a href="https://github.com/{{ site.social-github }}" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="https://x.com/{{ site.social-x }}" target="_blank" rel="noopener noreferrer">X</a></span>
+  </footer>
+  {% endunless %}
+  {% unless page.layout == 'shop' %}<script defer src="{{ '/assets/js/site.js' | relative_url }}"></script>{% endunless %}
 </body>
 </html>

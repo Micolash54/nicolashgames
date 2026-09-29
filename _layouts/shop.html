@@ -1,0 +1,6 @@
+---
+layout: default
+---
+{{ content }}
+<script id="shop-data" type="application/json">{{ site.data.shop | jsonify }}</script>
+<script defer src="{{ '/assets/js/shop.js' | relative_url }}"></script>

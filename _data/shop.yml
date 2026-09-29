@@ -1,0 +1,180 @@
+---
+bb:
+  kind: pack
+  big: true
+  legend: true
+  c1: "#F05E78"
+  c2: "#F29E45"
+  art: "/assets/img/bb/bb_banner.webp"
+  title: Bits and Boards
+  meta: MAIN · STEAM
+  tag: STEAM · PC
+  talker: MAIN<br>PROJECT
+  name: BITS AND BOARDS
+  lcd: MAIN PROJECT
+  genre: Game store simulator · PC · Unity
+  shot: "/assets/img/bb/bb_banner.webp"
+  d: 'You run the counter of a bustling neighbourhood game store and manage everything
+    that happens on, under and after it. Developed solo in Unity: AI-driven staff,
+    customers with budgets and wish-lists, economy balancing, UI/UX and performance.'
+  f:
+  - 'Manage your shop: sales data & seasonal trends'
+  - Hire staff & automate the queue
+  - 'Satisfy customers: reviews drive reputation'
+  - 'Expand & upgrade: floor, furniture, décor'
+  - Level up & spend perk points
+  tools:
+  - Unity
+  - Blender
+  - GitHub
+  links:
+  - - View on Steam
+    - https://store.steampowered.com/app/3484190/
+  - - Project page
+    - "/bits-and-boards/"
+  photos:
+  - "/assets/img/bb/bb_shot1.webp"
+  - "/assets/img/bb/bb_shot2.webp"
+  - "/assets/img/bb/bb_shot3.webp"
+  - "/assets/img/bb/bb_shot4.webp"
+sf:
+  kind: pack
+  c1: "#4E9F3D"
+  c2: "#9CCB4E"
+  art: "/assets/img/sf/sf_banner.webp"
+  title: Summoners Frontline
+  meta: MOBILE
+  tag: MOBILE
+  name: SUMMONERS FRONTLINE
+  lcd: RELEASED
+  genre: Base-building strategy · Mobile · Unity
+  shot: "/assets/img/sf/sf_shot1.webp"
+  d: Fast-paced action with deep strategic planning. Master unit synergy, timing and
+    resource management to build and upgrade your base into a force tailored to your
+    playstyle.
+  f:
+  - 'Unit synergy: combine a diverse roster'
+  - 'Upgrades & builds: units, spells, tower'
+  - 'Resource management: now vs. the long game'
+  tools:
+  - Unity
+  - GitHub
+  links:
+  - - Play on itch.io
+    - https://micolash54.itch.io/summoners-frontline
+  - - Project page
+    - "/summoners-frontline/"
+  photos:
+  - "/assets/img/sf/sf_shot1.webp"
+  - "/assets/img/sf/sf_shot2.webp"
+  - "/assets/img/sf/sf_shot3.webp"
+  - "/assets/img/sf/sf_banner.webp"
+tc:
+  kind: pack
+  c1: "#3B6FC4"
+  c2: "#8A5BC0"
+  art: "/assets/img/tc/tc_banner.webp"
+  title: Tap Conquest
+  meta: MOBILE
+  tag: MOBILE
+  name: TAP CONQUEST
+  lcd: RELEASED
+  genre: Tower conquest + deck building · Mobile
+  shot: "/assets/img/tc/tc_shot1.webp"
+  d: Classic tower conquering with the strategic depth of deck building. Loadout cards
+    with unique effects let you tailor your approach to every level.
+  f:
+  - 'Tower conquest: deploy units, seize towers'
+  - 'Loadout: cards with unique effects'
+  - 'Steampunk meets nature: pixel-art world'
+  tools:
+  - Unity
+  - Aseprite
+  - GitHub
+  links:
+  - - Play on itch.io
+    - https://micolash54.itch.io/tap-conquest
+  - - Project page
+    - "/tap-conquest/"
+  photos:
+  - "/assets/img/tc/tc_shot1.webp"
+  - "/assets/img/tc/tc_shot2.webp"
+  - "/assets/img/tc/tc_shot3.webp"
+  - "/assets/img/tc/tc_banner.webp"
+ar:
+  kind: pack
+  c1: "#6F7D5B"
+  c2: "#39452F"
+  art: "/assets/img/archive/binders-4-3.webp"
+  title: The Archive
+  meta: 3 CARDS · MYSTERY
+  tag: 2021–22
+  name: THE ARCHIVE
+  lcd: MYSTERY PACK
+  genre: Early projects · university & internships
+  cards:
+  - id: ewb
+    "n": Enemies With Benefits
+    m: 2022 · MULTIPLAYER · UNITY
+    img: "/assets/img/archive/ewb-splash.webp"
+    d: 'Race to the top: cooperate or betray, on randomly generated maps, with a physics-based
+      active ragdoll that makes everyone goofy.'
+    l:
+    - Archive page
+    - "/archive/"
+  - id: esc
+    "n": Escapod
+    m: 2022 · GAME JAM · GAMEMAKER
+    img: "/assets/img/archive/escapod-still.jpg"
+    d: 'Built in about a day for the 2022 Opera GX game jam. Theme: “Keep Moving!”'
+    l:
+    - Play on Opera GX
+    - https://gx.games/games/kk5imy/escapod/
+  - id: dm
+    "n": Demolition Men
+    m: 2021 · MULTIPLAYER · UNITY
+    img: "/assets/img/archive/demomen-poster.png"
+    d: An early multiplayer Unity project from university.
+    l:
+    - Archive page
+    - "/archive/"
+  photos:
+  - "/assets/img/archive/ewb-splash.webp"
+  - "/assets/img/archive/binders-4-3.webp"
+  - "/assets/img/archive/demomen-poster.png"
+nico:
+  kind: fig
+  tag: ABOUT ME
+  name: NICO · DEV FIGURE
+  lcd: COLLECTIBLE
+  title: Nico figure
+  email: nicolashgamedev@gmail.com
+  intro: Hi there, I’m Nico.
+  bio:
+  - I’m a game developer with a strong foundation in Unity and C#, driven by a passion for strategy and management games.
+  - I enjoy creating games that blend clarity, complexity and player agency, and I’m motivated by crafting systems that grow, evolve and reward thoughtful decision-making.
+  - Beyond programming I design UI/UX, make 2D and 3D assets, iterate quickly and manage the full development cycle, solo or with a team.
+  f:
+  - Gameplay systems & game loops
+  - AI behaviours
+  - Economy & progression
+  - UI frameworks & UX
+  - 2D & 3D assets
+  tools:
+  - Unity
+  - C#
+  - GitHub
+  - Blender
+  - Aseprite
+  - Illustrator
+  links:
+  - - About page
+    - "/about/"
+  - - GitHub
+    - https://github.com/Micolash54
+  - - "@NicolashGameDev"
+    - https://x.com/NicolashGameDev
+  photos:
+  - "/assets/img/bb/bb_banner.webp"
+  - "/assets/img/sf/sf_banner.webp"
+  - "/assets/img/tc/tc_banner.webp"
