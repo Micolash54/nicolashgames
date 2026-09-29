@@ -3,7 +3,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Indie game developer crafting strategy and management games.
 permalink: ':title/'
 baseurl: ""
-url: "https://micononico.github.io"
+url: "https://niccolochiodo.com"
 site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
@@ -16,12 +16,6 @@ social-github: MicoNoNico # add your Github handle
 social-linkedin: # add your Linkedin handle
 social-email: nicolashgamedev@gmail.com
 
-# Disqus
-discus-identifier: mr-brown # add your discus identifier
-
-# Tracker
-analytics: # Google Analytics
-
 # Build Settings
 markdown: kramdown
 plugins:
@@ -32,4 +26,4 @@ plugins:
 paginate: 8
 paginate_path: "/page/:num"
 
-exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock", "README.md", "LICENSE", "vercel.json"]

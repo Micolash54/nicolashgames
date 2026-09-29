@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tap Conquest
-date: 2017-09-13 13:32:20 +0300
+date: 2025-09-17
 description: Conquer towers with precision as you craft powerful decks, customize your loadouts, and unleash strategies uniquely tailored to your playstyle.
 img: /tc/tc_banner.webp # Add image post
 fig-caption: # Add figcaption

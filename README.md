@@ -1,37 +1,35 @@
-# Flexible-Jekyll is a simple and clean theme for Jekyll
+# Nicolash Games portfolio website
 
-![](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/promo-img.jpg?raw=true)
+This repository contains the Jekyll site for [niccolochiodo.com](https://niccolochiodo.com). It presents Nicolash Games projects, an about page, and patch notes for Bits and Boards.
 
-## Demo
+## Run locally
 
-Check the theme in action [Demo](https://artemsheludko.github.io/flexible-jekyll/)
+Install Ruby and Bundler, then run from this directory:
 
-The main page would look like this:
+```sh
+bundle install
+bundle exec jekyll serve
+```
 
-![Main page preview](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/home-page.jpg?raw=true)
+Open `http://localhost:4000`. The Ruby dependencies are pinned in `Gemfile.lock`. A production build uses `bundle exec jekyll build` and writes to `_site/`.
 
-The post page would look like this:
+## Where to edit
 
-![Post page preview](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/post-example.jpg?raw=true)
+| Path | Purpose |
+| --- | --- |
+| `_posts/` | Project and archive pages |
+| `assets/img/` | Project images and videos |
+| `assets/css/` | Site styles; `main.css` is served by the site |
+| `_layouts/`, `_includes/` | Shared page templates |
+| `aboutme.html` | About page |
+| `patchnotes/` | Version index and Markdown notes consumed by the game and the site |
+| `patchnotes.html` | Human-readable patch notes page |
+| `_config.yml` | Site metadata, plugins, URLs, and pagination |
 
-## Features
+The custom domain is set in `_config.yml` as `https://niccolochiodo.com`. The templates use that URL for social sharing metadata. `baseurl` is empty because the site is served from the domain root.
 
-- [Google Fonts](https://fonts.google.com/)
-- [Font Awesome](http://fontawesome.io/)
-- [Disqus](https://disqus.com/)
-- [Analytics](https://analytics.google.com/analytics/web/)
-- Support Emoji
+## Deployment
 
-## Installation:
+`vercel.json` configures Vercel to install the Ruby bundle, run `bundle exec jekyll build`, and publish `_site/`. Configure `niccolochiodo.com` in the Vercel project and its DNS settings; this repository does not use GitHub Pages.
 
-Fork the ``master`` branch and follow the [Jekyll Installation Documentation](https://jekyllrb.com/docs/installation/).
-
-## License
-
-GNU General Public License v3.0
-
-## Premium Themes by Artem
-
-| [![Coderon Jekyll Theme](https://github.com/artemsheludko/artemsheludko.github.io/raw/master/assets/preview/coderon-preview.png?raw=true)](https://jekyllthemes.io/theme/coderon-blog-jekyll-theme) | [![Renva Portfolio Jekyll Theme](https://github.com/artemsheludko/artemsheludko.github.io/raw/master/assets/preview/renva-preview.png?raw=true)](https://jekyllthemes.io/theme/renva-portfolio-jekyll-theme) | [![Nomod](https://github.com/artemsheludko/artemsheludko.github.io/raw/master/assets/preview/nomod-preview.png?raw=true)](https://jekyllthemes.io/theme/nomod-blog-jekyll-theme) |
-|:---:|:---:|:---:|
-| **Coderon** | **Renva** | **Nomod** |
+The site began from the Flexible-Jekyll theme. Its original GPLv3 license is retained in `LICENSE`; project media may have separate ownership or usage terms.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Summoners Frontline
-date: 2017-09-13 13:32:20 +0300
+date: 2025-09-18
 description: Master the art of unit synergy, timing, and resource management to build and upgrade your base, creating a dynamic force tailored to your playstyle.
 img: /sf/sf_banner.webp # Add image post
 fig-caption: # Add figcaption

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Archive
-date: 2017-09-13 13:32:20 +0300
+date: 2023-09-16
 description: Archive of some old unreleased projects developed during my university study or internships.
 img: /archive/binders-4-3.webp # Add image post
 fig-caption: # Add figcaption
